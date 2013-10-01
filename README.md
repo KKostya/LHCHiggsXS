@@ -14,12 +14,12 @@ Then in python:
     import LHCHiggsXS as xs
 
     print "M = 125 Glu-Glu Higgs production cross-section:"
-    print "At sqrt(s) = 8TeV", xs.EightTeV(125)['gg']['xsec']
-    print "At sqrt(s) = 7TeV", xs.SevenTeV(125)['gg']['xsec']
+    print "At sqrt(s) = 8TeV", xs.EightTeV(125)['ggh']['xsec']
+    print "At sqrt(s) = 7TeV", xs.SevenTeV(125)['ggh']['xsec']
 
     print "Corresponding pdf+alphas uncertaities:"
-    print "At sqrt(s) = 8TeV", xs.EightTeV(125)['gg']['pdf']
-    print "At sqrt(s) = 7TeV", xs.SevenTeV(125)['gg']['pdf']
+    print "At sqrt(s) = 8TeV", xs.EightTeV(125)['ggh']['pdf']
+    print "At sqrt(s) = 7TeV", xs.SevenTeV(125)['ggh']['pdf']
 
     print "M = 230 Higgs branching to ZZ:" , xs.Br(230)['hzz']['br']
     print "Interpolated value for M = 642:", xs.Br(642)['hzz']['br']
